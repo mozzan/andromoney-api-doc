@@ -38,6 +38,8 @@ end
 activate :relative_assets
 set :relative_links, true
 
+set :http_prefix, ENV["PATH_PREFIX"] || "/"
+
 # Build Configuration
 configure :build do
   # If you're having trouble with Middleman hanging, commenting
